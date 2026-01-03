@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mood Mirror - Home</title>
+<style>
+body
+{
+font-family: Arial, sans-serif;
+background-color: #fff9db;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px;
+}
+nav
+{
+display: flex;
+flex-direction: row;
+align-items: center;
+width: 100%;
+}
+h1
+{
+display: flex;
+flex-direction: column;
+align-items: center;
+color: #d63384;
+margin-bottom: 10px;
+}
+nav a
+{
+color: #3182ce;
+font-weight: bold;
+margin: 0 10px;
+}
+.content
+{
+background-color: #fff0f6;
+padding: 30px;
+width: 350px;
+border-radius: 15px;
+border: 2px solid #fcc2d7;
+text-align: center;
+}
+.content h2
+{
+color: #a61e4d;
+margin-bottom: 10px;
+}
+.content p
+{
+color: #a61e4d;
+margin-bottom: 20px;
+}
+.buttons button
+{
+background-color: #ffdeeb;
+color: #a61e4d;
+border: 2px solid #fcc2d7;
+padding: 10px;
+margin: 6px;
+font-weight: bold;
+cursor: pointer;
+border-radius: 5px;
+width: auto;
+}
+.buttons button:hover
+{
+background-color: #fcc2d7;
+}
+#message
+{
+margin-top: 20px;
+font-size: 18px;
+color: #a61e4d;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Mood Mirror</h1>
+<nav>
+<a href="index.html">Home</a> |
+<a href="table.html">Mood Log</a> |
+<a href="form.html">Feedback</a> |
+<a href="about.html">About Us</a>
+</nav>
+</header>
 
+<div class="content">
+<h2>Welcome to Mood Mirror 🌸</h2>
+<p>Select your current mood to get a gentle suggestion.</p>
+<div class="buttons">
+<button onclick="setMood('happy')">😊 Happy</button>
+<button onclick="setMood('sad')">😔 Sad</button>
+<button onclick="setMood('tired')">😴 Tired</button>
+<button onclick="setMood('stressed')">😵 Stressed</button>
+</div>
+<p id="message"></p>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
