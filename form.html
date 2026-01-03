@@ -88,7 +88,32 @@
     <h2>Share Your Feedback</h2>
 
     <form>
-      
+     <label>Full Name</label> 
+      <input type="text" placeholder="Your Name" required>
+    <label>Email Address</label>
+      <input type="email" placeholder="Your Email" required>
+    <label>How many hours did you sleep?</label>
+      <select required>
+       <option value="">Select Hours</option>
+       <option>Less than 5</option>
+       <option>5 to 7 hours</option>
+       <option>8+ hours</option>
+     </select> 
+    <label>How are you feeling right now?</label>
+      <select required>
+        <option vlaue="">Select Mood</option>
+        <option>Happy</option>
+        <option>Calm</option>
+        <option>Stressed</option>
+        <option>Excited</option>
+      </select>
+    <label>Additional Notes</label>
+      <textarea placeholder="Anything else you want to share?"></textarea>
+    <label>Was this tool helpful?</label>
+      <input type="radio" name="help" value="yes" style="width: auto;">Yes
+      <input type="radio" name="help" value="no" style="width: auto;">No
+      <br><br>
+      <button type= "submit">Send Feedback</button>
     </form>
   </body>
 </html>
